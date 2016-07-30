@@ -19,6 +19,7 @@ function rxify(method){
         .on('error', err => observer.onError(err))  // JSONStream can not handle errors. Thus, we can not pipe to JSONStream directly if there is an error
         .pipe(JSONStream.parse(schema))
         .on('data', data => observer.onNext(data))
+        .on('end', () => observer.onCompleted())
     );
 }
 
