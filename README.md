@@ -16,11 +16,11 @@ where :
 ## Examples
 ### Without JSON path
 The following request :
-```
+```js
 RxRequest.get(''https://swapi.co/api/starships/').subscribe(...)
 ```
 will give you the entire JSON response as **one** element in the observable sequence :
-```
+```json
 {
   count: 37,
   next: 'http://swapi.co/api/starships/?page=2',
@@ -37,12 +37,12 @@ will give you the entire JSON response as **one** element in the observable sequ
 
 ### With a JSON path
 The following request :
-```
+```js
 RxRequest.get(''https://swapi.co/api/starships/', 'results.*').subscribe(...)
 ```
 
 will emit each starship as an element of the observable sequence, avoiding you the extra flattening operation :
-```
+```json
 {
   name: 'Death Star',
   ...
