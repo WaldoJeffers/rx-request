@@ -4,7 +4,7 @@
 **request + RxJS + JSONStream**
 
 ## Description
-A small module that allows you to manipulate the result of HTTP requests as an observable sequence.
+A small module that allows you to manipulate the result of an HTTP request as an observable sequence.
 
 ## Usage
 ### RxRequest.HTTP_METHOD(url | options, [path = null])
