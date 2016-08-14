@@ -1,5 +1,5 @@
 {
-  "name": "rx-request",
+  "name": "@waldojeffers/rx-request",
   "version": "1.2.0",
   "description": "request + RxJs + JSONStream",
   "main": "index.js",

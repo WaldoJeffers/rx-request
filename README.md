@@ -1,5 +1,5 @@
 # rx-request
-[![Dependency Status](https://david-dm.org/WaldoJeffers/rx-request.svg)](https://david-dm.org/WaldoJeffers/rx-request)
+[![Dependency Status](https://img.shields.io/david/WaldoJeffers/rx-request.svg?style=flat-square)](https://david-dm.org/WaldoJeffers/rx-request)
 
 **request + RxJS + JSONStream**
 
