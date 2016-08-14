@@ -1,6 +1,6 @@
 {
   "name": "rx-request",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "request + RxJs + JSONStream",
   "main": "index.js",
   "scripts": {
@@ -13,7 +13,7 @@
     "request": "^2.74.0",
     "rx": "^4.1.0"
   },
-  "engines" : {
-    "node" : ">= 4.0.0"
+  "engines": {
+    "node": ">= 4.0.0"
   }
 }
