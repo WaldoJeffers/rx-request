@@ -15,5 +15,20 @@
   },
   "engines": {
     "node": ">= 4.0.0"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WaldoJeffers/rx-request.git"
+  },
+  "keywords": [
+    "rx",
+    "rxjs",
+    "request",
+    "observable"
+  ],
+  "bugs": {
+    "url": "https://github.com/WaldoJeffers/rx-request/issues"
+  },
+  "homepage": "https://github.com/WaldoJeffers/rx-request#readme"
 }
