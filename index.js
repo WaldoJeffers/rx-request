@@ -9,7 +9,7 @@ function rxify(method){
     Rx.Observable.create(observer =>
       method(url)
         .on('response', function onResponse(res){ // needs to be an ES5 function, otherwise `this` is undefined
-          if (res.statusCode >= 200 && res.statusCode < 300){
+          if (res.statusCode < 200 || res.statusCode >= 300){
             this.emit('error', {
               statusCode    : res.statusCode,
               statusMessage : res.statusMessage
