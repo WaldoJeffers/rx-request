@@ -6,6 +6,17 @@
 ## Description
 A small module that allows you to manipulate the result of an HTTP request as an observable sequence.
 
+## Installation
+With npm :
+```bash
+npm install @waldojeffers/rx-request
+```
+
+Then, in a node.js file :
+```js
+const RxRequest = require('@waldojeffers/rx-request');
+```
+
 ## Usage
 ### RxRequest.HTTP_METHOD(url | options, [path = null])
 where :
