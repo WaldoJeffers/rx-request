@@ -4,7 +4,7 @@
 **request + RxJS + JSONStream**
 
 ## Description
-A small module that allows you to manipulate the result of an HTTP request as an observable sequence.
+A small **node.js** module that allows you to manipulate the result of an HTTP request as an observable sequence.
 
 ## Installation
 With npm :
@@ -24,7 +24,7 @@ where :
 * `url | options` (String | Object) : string URL, or an options object to pass to [request](https://github.com/request/request#requestoptions-callback)
 * `path` (String) : a JSON path that will be passed to [JSONStream.parse](https://github.com/dominictarr/JSONStream#jsonstreamparsepath). Each element matched by this path will be emitted as a **single** element in the resulting observable sequence.
 
-**HTTP error handling** : By default, if a request returns a `statusCode` which is not in the [2xx Success range](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes#2xx_Success) (*ie* [200, 299]), the observable sequence will emit an error. Thus, you can make sure every request in your observable sequence has succeeded. *Caution* : if a single request fails, the entire observable might fail as well if you use RxJs operators which do not handle errors (*eg* concatMap, flatMap).
+**HTTP error handling** : By default, if a request returns a `statusCode` which is not in the [2xx Success range](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes#2xx_Success) (*ie* [200, 299]), the observable sequence will emit an error. Thus, you can make sure every request in your observable sequence has succeeded. *Caution* : if a single request fails, the entire observable sequence might fail as well if you use RxJs operators which do not handle errors (*eg* concatMap, flatMap).
 
 ## Examples
 ### Without JSON path
