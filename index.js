@@ -23,12 +23,17 @@ function rxify(method){
     );
 }
 
-module.exports  = {
-  del     : rxify(request.del),
-  delete  : rxify(request.delete),
-  get     : rxify(request.get),
-  head    : rxify(request.head),
-  patch   : rxify(request.patch),
-  post    : rxify(request.post),
-  put     : rxify(request.put)
-};
+function RxRequest(...args){
+  return RxRequest.get(...args);
+}
+
+RxRequest.del     = rxify(request.del);
+RxRequest.delete  = rxify(request.delete);
+RxRequest.get     = rxify(request.get);
+RxRequest.head    = rxify(request.head);
+RxRequest.patch   = rxify(request.patch);
+RxRequest.post    = rxify(request.post);
+RxRequest.put     = rxify(request.put);
+
+
+module.exports  = RxRequest;
